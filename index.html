@@ -13,232 +13,266 @@
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
+<!-- все теги кроме head должны находиться внутри body.-->
+
+<!-- не стоит применять стили к селектору тега header {}, самая лучше практика применять стили к селектору класса .header {}-->
+
+<!-- LIVE CODING: переверстать header -->
 <header>
+    <!-- холиварная тема, но я предпочитаю полные названия без сокращений header-wrap - header-wrapper  -->
+    <!-- попробовать избежать лишней вложенности   -->
     <div class="header-wrap">
         <div class="header-container">
             <a href="#" class="header-logo">
                 <img src="img/logotype.png" alt="logo">
             </a>
+            <!--  header-menu - данный элемент не является меню, он отвечает за смену языка и смене валюты, меню отвечает за навигацию по страницам(попробовать найти ей статью с UI\UX компонентами и их описанием, так же найти статью с бест практис по названиям классов)          -->
             <nav class="header-menu">
+                <!--  class="icon icon-globe"  или class="icon icon-language"-->
                 <div class="icon"></div>
                 <p>Русский, USD</p>
+                <!--  class="icon icon-arrow"  или class="icon icon-picklist-arrow" -->
+                <!--  нужно избегать подобных названий - icon1       -->
                 <div class="icon1"></div>
             </nav>
+
+            <!--  концепция общих стилей, конечно лучше всего - это применимо с SCSS !!! но и в обычном css можно создавать общие селекторы и модифицировать их.-->
+            <!--  LIVE CODING: для примера объединить стили всех кнопок на сайте -->
             <button class="header-btn">Вход</button>
         </div>
     </div>
 </header>
 
 <body>
-    <section class="start-now">
-        <div class="container">
-            <div class="container-text">
+<section class="start-now">
+    <!--    лишний контейнер, от этой вложенности можно избавится -->
+    <div class="container">
+        <div class="container-text">
+            <!-- title, subtitle or description -> -->
             <h1>Обучаться новому
                 быстро и легко </h1>
-                <p>Текст-«рыба» — это заготовленный, 
-                    скопированный 
-                    или собственноручно написанный текст 
-                    для экономии времени</p>
+            <p>Текст-«рыба» — это заготовленный,
+                скопированный
+                или собственноручно написанный текст
+                для экономии времени</p>
 
-                    <button class="start-now-btn">Начать сейчас</button>
+            <button class="start-now-btn">Начать сейчас</button>
         </div>
         <div class="container-pic">
             <img src="img/bc-banner.png" alt="banner">
         </div>
-    </section>
+    </div>
+</section>
+<!-- categories -->
+<!-- у секции неправильный bgc, глянуть hover state -->
+<section class="study">
+    <!--  это уже меню или табы tabs-->
+    <div class="head-study">
+        <!-- tabs item -->
+        <div class="gr-line"></div>
+        <h2>Обучение</h2>
+        <h2>Консультирование</h2>
+        <h2>Life style</h2>
+    </div>
+    <!--  categories container -->
+    <div class="container-study">
+        <div class="objects">
+            <div class="dots-decoration">
+                <img src="/img/dots.png" alt="img">
+            </div>
+            <!--   arc-background or semicircle-background         -->
+            <!-- ellips-decoration - в блоке ниже насоложены относительно общего контейнера и при ресайзе они всегда прижаты к краям,
+            в этом блоке БГ расположены относительно внутреннего блока и уезжают при ресайзе-->
+            <div class="dots-orange">
+                <img src="/img/orange-dott.png" alt="img">
+            </div>
+            <div class="box">
+                <img src="/img/geolocation.png" alt="img">
+                <p>Английский язык</p>
+            </div>
+            <div class="box">
+                <img src="/img/geolocation.png" alt="img">
+                <p>География</p>
+            </div>
+            <div class="box">
+                <img src="/img/calculate.png" alt="img">
+                <p>Математика</p>
+            </div>
+            <div class="box">
+                <img src="/img/geolocation.png" alt="img">
+                <p>Право</p>
+            </div>
+            <div class="box">
+                <img src="/img/calculate.png" alt="img">
+                <p>Эссе</p>
+            </div>
+            <div class="box">
+                <img src="/img/geolocation.png" alt="img">
+                <p>Эссе</p>
+            </div>
+            <div class="box">
+                <img src="/img/geolocation.png" alt="img">
+                <p>Право</p>
+            </div>
+            <div class="box">
+                <img src="/img/calculate.png" alt="img">
+                <p>Математика</p>
+            </div>
+            <div class="box">
+                <img src="/img/geolocation.png" alt="img">
+                <p>География</p>
+            </div>
+            <div class="box">
+                <img src="/img/calculate.png" alt="img">
+                <p>Английсикй язык</p>
+            </div>
 
-    <section class="study">
-        
-        <div class="head-study">
-            <div class="gr-line"></div>
-            <h2>Обучение</h2>
-            <h2>Консультирование</h2>
-            <h2>Life style</h2>
         </div>
-            <div class="container-study">
-            
-                <div class="objects">
-                    <div class="dots-decoration">
-                        <img src="/img/dots.png" alt="img">
-                    </div>
-                    <div class="dots-orange">
-                        <img src="/img/orange-dott.png" alt="img">
-                    </div>
-                    <div class="box">
-                        <img src="/img/geolocation.png" alt="img">
-                        <p>Английский язык</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/geolocation.png" alt="img">
-                        <p>География</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/calculate.png" alt="img">
-                        <p>Математика</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/geolocation.png" alt="img">
-                        <p>Право</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/calculate.png" alt="img">
-                        <p>Эссе</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/geolocation.png" alt="img">
-                        <p>Эссе</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/geolocation.png" alt="img">
-                        <p>Право</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/calculate.png" alt="img">
-                        <p>Математика</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/geolocation.png" alt="img">
-                        <p>География</p>
-                    </div>
-                    <div class="box">
-                        <img src="/img/calculate.png" alt="img">
-                        <p>Английсикй язык</p>
-                    </div>
-                    
-                </div>
-                <div class="what-else">
-                    <h3>Еще</h3>
-                    <div class="icon1"></div>
-                </div>
+        <!--    show-more    -->
+        <div class="what-else">
+            <h3>Еще</h3>
+            <!--  class="icon icon-arrow"  или class="icon icon-picklist-arrow" -->
+            <!--  нужно избегать названий подобных - icon1       -->
+            <div class="icon1"></div>
         </div>
-    </section>
-   
+    </div>
+</section>
 
-        <section class="our-advantages">
-            <div class="head-advantages">
-            <h1>Наши преимущества</h1>
+<!--benefits-->
+<section class="our-advantages">
+    <div class="head-advantages">
+        <h1>Наши преимущества</h1>
+    </div>
+
+    <!--    это должен быть один блок в котором элементы переносятся на новую строку-->
+    <div class="advantage-first">
+        <div class="advantage">
+            <!-- ты декомпозировала стили на разные файлы, так же можно поступать и с картинками нужно разбить их на секции (если их очень много как тут) и называть внутри папки benefits_1 , benefits_2-->
+            <img src="/img/image 10.png" alt="img">
+            <p>Заголовок преимущества</p>
         </div>
-        <div class="advantage-first">
-                <div class="advantage">
-                    <img src="/img/image 10.png" alt="img">
-                    <p>Заголовок преимущества</p>
+        <div class="advantage">
+            <img src="/img/image 11.png" alt="img">
+            <p>Заголовок преимущества</p>
+        </div>
+        <div class="advantage">
+            <img src="/img/image 12.png" alt="img">
+            <p>Заголовок преимущества</p>
+        </div>
+        <div class="advantage">
+            <img src="/img/image 13.png" alt="img">
+            <p>Заголовок преимущества</p>
+        </div>
+    </div>
+
+    <div class="advantage-second">
+        <div class="advantage">
+            <img src="/img/image 7.png" alt="img">
+            <p>Заголовок преимущества</p>
+        </div>
+        <div class="advantage">
+            <img src="/img/image 8.png" alt="img">
+            <p>Заголовок преимущества</p>
+        </div>
+        <div class="advantage">
+            <img src="/img/image 9.png" alt="img">
+            <p>Заголовок преимущества</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- join-now -->
+<section class="do-it">
+    <!--    тут БГ сделано четко, при ресайзе все правильно прижато к краям -->
+    <div class="vector-decoration">
+        <img src="/img/Vector.png" alt="img">
+    </div>
+    <div class="ellips-decoration">
+        <img src="/img/Ellipse 3.png" alt="img">
+    </div>
+    <div class="ellips2-decoration">
+        <img src="/img/Ellipse 2.png" alt="img">
+    </div>
+    <div class="head-doit">
+        <h1>Блок с призывом
+            к действию</h1>
+        <!--        не рекомендую использовать BR в таких случаях лучше будет сделать max-width и центрировать-->
+        <p>Текст-«рыба» — это заготовленный,
+            скопированный<br> или собственноручно написанный
+            текст для экономии<br> времени</p>
+
+    </div>
+    <!--    лишний контейнер-->
+    <div class="booking">
+        <!--        тут нужно использовать общий селектор кнопок и по потребности модифицировать -->
+        <button class="booking-btn">Забронировать</button>
+    </div>
+</section>
+
+<section class="feedback">
+    <!--    это те же табы из второй секции только с другим текстом, нужно выносить в общие стили такие элементы -->
+    <div class="head-feedback">
+        <h2>Отзывы учеников</h2>
+        <h2>Отзывы специалистов</h2>
+    </div>
+
+    <!--    переделать -->
+    <div class="container-students">
+        <div class="students">
+            <div class="around_img1">
+                <img src="/img/around_img.png" alt="img">
+            </div>
+            <img src="./img/image 15.png" alt="img">
+        </div>
+        <div class="students">
+            <div class="around_img2">
+                <img src="/img/around_img.png" alt="img">
+            </div>
+            <img src="./img/image 16.png" alt="img">
+        </div>
+
+        <div class="student-feedback">
+            <div class="vector_decor">
+                <img src="/img/Vector_decor.png" alt="img">
+            </div>
+            <div class="arrow">
+                <img src="/img/arrow.png" alt="img">
+            </div>
+            <div>
+                <div class="around_img5">
+                    <img src="/img/big_around.png" alt="img">
                 </div>
-                <div class="advantage">
-                    <img src="/img/image 11.png" alt="img">
-                    <p>Заголовок преимущества</p>
-                </div>
-                <div class="advantage">
-                    <img src="/img/image 12.png" alt="img">
-                    <p>Заголовок преимущества</p>
-                </div>
-                <div class="advantage">
-                    <img src="/img/image 13.png" alt="img">
-                    <p>Заголовок преимущества</p>
-                </div>
-         </div>
-            <div class="advantage-second">
-                <div class="advantage">
-                    <img src="/img/image 7.png" alt="img">
-                    <p>Заголовок преимущества</p>
-                </div>
-                    <div class="advantage">
-                    <img src="/img/image 8.png" alt="img">
-                    <p>Заголовок преимущества</p>
-                </div>
-                <div class="advantage">
-                    <img src="/img/image 9.png" alt="img">
-                    <p>Заголовок преимущества</p>
-                </div>
+                <img src="./img/image 14.png" alt="img">
+            </div>
+            <div>
+                <h1>Дарья Лебедева</h1>
+                <img src="/img/rate.png" alt="img">
+                <p>Рыбным текстом называется текст,
+                    служащий для временного наполнения макета в публикациях или производстве веб-сайтов,
+                    пока финальный текст еще не создан.
+                    Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. </p>
             </div>
         </div>
-        </section>
 
-        <section class="do-it">
-            <div class="vector-decoration">
-                <img src="/img/Vector.png" alt="img">
+        <div class="students">
+            <div class="around_img3">
+                <img src="/img/around_img.png" alt="img">
             </div>
-            <div class="ellips-decoration">
-                <img src="/img/Ellipse 3.png" alt="img">
+            <img src="./img/image 17.png" alt="img">
+        </div>
+        <div class="students">
+            <div class="around_img4">
+                <img src="/img/around_img.png" alt="img">
             </div>
-            <div class="ellips2-decoration">
-                <img src="/img/Ellipse 2.png" alt="img">
-            </div>
-            <div class="head-doit">
-                <h1>Блок с призывом
-                    к действию</h1>
-                    <p>Текст-«рыба» — это заготовленный, 
-                        скопированный<br> или собственноручно написанный 
-                        текст для экономии<br> времени</p>
-                        
-            </div>
-            <div class="booking">
-                <button class="booking-btn">Забронировать</button>
-            </div>
-        </section>
-
-        <section class="feedback">
-            <div class="head-feedback">
-                <h2>Отзывы учеников</h2>
-                <h2>Отзывы специалистов</h2>
-            </div>
-                <div class="container-students">
-                    <div class="students">
-                        <div class="around_img1">
-                            <img src="/img/around_img.png" alt="img">
-                        </div>
-                        <img src="./img/image 15.png" alt="img">
-                    </div>
-                    <div class="students">
-                        <div class="around_img2">
-                            <img src="/img/around_img.png" alt="img">
-                        </div>
-                        <img src="./img/image 16.png" alt="img">
-                    </div>
-                
-                <div class="student-feedback">
-                    <div class="vector_decor">
-                        <img src="/img/Vector_decor.png" alt="img">
-                    </div>
-                    <div class="arrow">
-                        <img src="/img/arrow.png" alt="img">
-                    </div>
-                    <div>
-                        <div class="around_img5">
-                            <img src="/img/big_around.png" alt="img">
-                        </div>
-                    <img src="./img/image 14.png" alt="img">
-                    </div>
-                    <div>
-                        <h1>Дарья Лебедева</h1>
-                        <img src="/img/rate.png" alt="img">
-                    <p>Рыбным текстом называется текст, 
-                        служащий для временного наполнения макета в публикациях или производстве веб-сайтов,
-                         пока финальный текст еще не создан. 
-                        Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. </p>
-                    </div>
-                </div>
-               
-                <div class="students">
-                    <div class="around_img3">
-                        <img src="/img/around_img.png" alt="img">
-                    </div>
-                    <img src="./img/image 17.png" alt="img">
-                </div>
-                <div class="students">
-                    <div class="around_img4">
-                        <img src="/img/around_img.png" alt="img">
-                    </div>
-                    <img src="./img/image 18.png" alt="img">
-                </div>
-            </div>
-            </div>
-
-            
-
-        </section>
+            <img src="./img/image 18.png" alt="img">
+        </div>
+    </div>
+    </div>
+</section>
 </body>
 </html>

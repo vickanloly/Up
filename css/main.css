@@ -52,35 +52,54 @@
     background-color: #E5E5E5;
 }
 
+
+/*.head-study {*/
+/*    margin: 65px auto 80px auto;*/
+/*    display: flex;*/
+/*    justify-content: space-around;*/
+/*    width: 943px;*/
+/*    border-top: 2px solid #F6F6F6;*/
+/*    border-bottom: 2px solid #F6F6F6;*/
+/*}*/
+
+/*.head-study h2 {*/
+/*    font-family: 'Open Sans', sans-serif;*/
+/*    font-weight: 800;*/
+/*    font-size: 36px;*/
+/*    color: #4D4D4D;*/
+/*    padding: 11px 0;*/
+/*}*/
+
+/*.head-study h2:hover {*/
+/*    color: #1A1A1A;*/
+/*    text-decoration: underline orange 5px;*/
+/*    text-underline-offset: 20px;*/
+/*    */
+/*}*/
+
 .head-study {
-    padding-top: 65px;
     display: flex;
     justify-content: space-around;
-    margin: 0 auto;
     width: 943px;
+    height: 75px;
+    margin: 65px auto 80px auto;
+    border-top: 2px solid #F6F6F6;
+    border-bottom: 2px solid #F6F6F6;
 }
 
-/* .gr-line {
-    width: 1054px;
-    height: 2px;
-    background: #F6F6F6;
-} */
-
 .head-study h2 {
+    padding: 11px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 36px;
     color: #4D4D4D;
-    margin-bottom: 79px;
+    cursor: pointer;
 }
 
 .head-study h2:hover {
+    border-bottom: 5px solid orange;
+    margin-bottom: -4px;
     color: #1A1A1A;
-    text-decoration: underline orange 5px;
-    text-underline-offset: 10px;
-    cursor: pointer;
-    
-    
 }
 
 .dots-decoration { 
