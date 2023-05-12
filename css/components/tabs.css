@@ -1,0 +1,23 @@
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    max-width: 943px;
+    height: 75px;
+    margin: 65px auto 80px auto;
+    border-top: 2px solid #F6F6F6;
+    border-bottom: 2px solid #F6F6F6;
+}
+
+.tabs .tabs-item {
+    padding: 11px;
+    font-weight: 800;
+    font-size: 36px;
+    color: #4D4D4D;
+    cursor: pointer;
+}
+
+.tabs .tabs-item:hover {
+    border-bottom: 5px solid orange;
+    margin-bottom: -4px;
+    color: #1A1A1A;
+}

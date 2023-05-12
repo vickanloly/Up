@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/button.css">
+    <link rel="stylesheet" href="css/components/tabs.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,69 +19,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
-<!-- все теги кроме head должны находиться внутри body.-->
 
-<!-- не стоит применять стили к селектору тега header {}, самая лучше практика применять стили к селектору класса .header {}-->
+<body>
+<header class="header">
+    <div class="header-container">
+        <a href="#" class="header-logo">
+            <img src="img/logotype.png" alt="logo">
+        </a>
 
-<!-- LIVE CODING: переверстать header -->
-<header>
-    <!-- холиварная тема, но я предпочитаю полные названия без сокращений header-wrap - header-wrapper  -->
-    <!-- попробовать избежать лишней вложенности   -->
-    <div class="header-wrap">
-        <div class="header-container">
-            <a href="#" class="header-logo">
-                <img src="img/logotype.png" alt="logo">
-            </a>
-            <!--  header-menu - данный элемент не является меню, он отвечает за смену языка и смене валюты, меню отвечает за навигацию по страницам(попробовать найти ей статью с UI\UX компонентами и их описанием, так же найти статью с бест практис по названиям классов)          -->
-            <nav class="header-menu">
-                <!--  class="icon icon-globe"  или class="icon icon-language"-->
-                <div class="icon"></div>
-                <p>Русский, USD</p>
-                <!--  class="icon icon-arrow"  или class="icon icon-picklist-arrow" -->
-                <!--  нужно избегать подобных названий - icon1       -->
-                <div class="icon1"></div>
-            </nav>
-
-            <!--  концепция общих стилей, конечно лучше всего - это применимо с SCSS !!! но и в обычном css можно создавать общие селекторы и модифицировать их.-->
-            <!--  LIVE CODING: для примера объединить стили всех кнопок на сайте -->
-            <button class="header-btn">Вход</button>
+        <div class="header-picklist">
+            <div class="icon icon-globe"></div>
+            <p>Русский, USD</p>
+            <div class="icon icon-arrow"></div>
         </div>
+
+        <button class="button button-black">Вход</button>
     </div>
 </header>
 
-<body>
 <section class="start-now">
-    <!--    лишний контейнер, от этой вложенности можно избавится -->
-    <div class="container">
-        <div class="container-text">
-            <!-- title, subtitle or description -> -->
-            <h1>Обучаться новому
-                быстро и легко </h1>
-            <p>Текст-«рыба» — это заготовленный,
-                скопированный
-                или собственноручно написанный текст
-                для экономии времени</p>
+    <div class="container-text">
+        <!-- title, subtitle or description -> -->
+        <h1 class="title">
+            Обучаться новому
+            быстро и легко
+        </h1>
 
-            <button class="start-now-btn">Начать сейчас</button>
-        </div>
-        <div class="container-pic">
-            <img src="img/bc-banner.png" alt="banner">
-        </div>
+        <h2 class="subtitle">
+            Текст-«рыба» — это заготовленный,
+            скопированный
+            или собственноручно написанный текст
+            для экономии времени
+        </h2>
+
+        <button class="button button-orange">Начать сейчас</button>
+    </div>
+
+    <div class="container-pic">
+        <img src="img/bc-banner.png" alt="banner">
     </div>
 </section>
 <!-- categories -->
 <!-- у секции неправильный bgc, глянуть hover state -->
-<section class="study">
-    <!--  это уже меню или табы tabs-->
-    <div class="head-study">
-        <!-- tabs item -->
-        <div class="gr-line"></div>
-        <h2>Обучение</h2>
-        <h2>Консультирование</h2>
-        <h2>Life style</h2>
+<section class="categories">
+    <div class="tabs">
+        <h2 class="tabs-item">Обучение</h2>
+        <h2 class="tabs-item">Консультирование</h2>
+        <h2 class="tabs-item">Life style</h2>
     </div>
     <!--  categories container -->
-    <div class="container-study">
+    <div class="container-categories">
         <div class="objects">
             <div class="dots-decoration">
                 <img src="/img/dots.png" alt="img">
@@ -221,7 +210,6 @@
         <h2>Отзывы специалистов</h2>
     </div>
 
-    <!--    переделать -->
     <div class="container-students">
         <div class="students">
             <div class="around_img1">

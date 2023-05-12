@@ -1,18 +1,14 @@
+/* start-now */
 .start-now {
-    background-color: black;
- 
-}
-
-.container {
     display: flex;
     justify-content: space-between;
     max-height: 741px;
+    background-color: #000000;
 }
 
 .container-text {
     max-width: 573px;
     margin: 127px 59px 126px 261px;
-    
 }
 
 .container-text h1 {
@@ -20,7 +16,7 @@
     font-weight: 800;
     font-size: 54px;
     color: #FFFFFF;
-    padding-bottom: 29px;
+    margin-bottom: 29px;
 }
 
 .container-text p {
@@ -28,19 +24,14 @@
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
-    padding-bottom: 61px;
+    margin-bottom: 61px;
 }
 
-.start-now-btn {
+.start-now .button {
     width: 300px;
     height: 70px;
-    background: linear-gradient(90deg, #FD9422 0%, #FEC141 100%);
-    border-radius: 50px;
     border: 1px solid;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
     font-size: 20px;
-    cursor: pointer;
 }
 
 .container-pic img {
@@ -48,65 +39,12 @@
     height: 741px;
 }
 
-.study {
-    background-color: #E5E5E5;
-}
-
-
-/*.head-study {*/
-/*    margin: 65px auto 80px auto;*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    width: 943px;*/
-/*    border-top: 2px solid #F6F6F6;*/
-/*    border-bottom: 2px solid #F6F6F6;*/
-/*}*/
-
-/*.head-study h2 {*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    font-weight: 800;*/
-/*    font-size: 36px;*/
-/*    color: #4D4D4D;*/
-/*    padding: 11px 0;*/
-/*}*/
-
-/*.head-study h2:hover {*/
-/*    color: #1A1A1A;*/
-/*    text-decoration: underline orange 5px;*/
-/*    text-underline-offset: 20px;*/
-/*    */
-/*}*/
-
-.head-study {
-    display: flex;
-    justify-content: space-around;
-    width: 943px;
-    height: 75px;
-    margin: 65px auto 80px auto;
-    border-top: 2px solid #F6F6F6;
-    border-bottom: 2px solid #F6F6F6;
-}
-
-.head-study h2 {
-    padding: 11px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    font-size: 36px;
-    color: #4D4D4D;
-    cursor: pointer;
-}
-
-.head-study h2:hover {
-    border-bottom: 5px solid orange;
-    margin-bottom: -4px;
-    color: #1A1A1A;
-}
+/* categories */
 
 .dots-decoration { 
     position: absolute;
     left: -142px;
     top: 23px;
-
 }
 
 .dots-orange {
@@ -114,7 +52,7 @@
     left: 1300px;
     top: 150px;
 }
-.container-study {
+.container-categories {
     margin: 0 auto;
     max-width: 1220px;
     position: relative;
@@ -125,7 +63,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    
 }
 
 .box {
@@ -137,9 +74,6 @@
     background: #E5E5E5;;
     text-align: center;
     padding: 50px;
-   
-    
-    
 }
 
 .box img {
@@ -153,7 +87,6 @@
     font-weight: 600;
     font-size: 18px;
     color: #1A1A1A;
-   
 }
 
 .box:hover {

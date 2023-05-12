@@ -1,65 +1,51 @@
-header {
+.header {
     background: #FFFFFF;
     height: 96px;
     display: flex;
     align-items: center;
 }
 
-.header-wrap {
-    margin: 0 auto;
-    width: 1185px;
-}
-
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    width: 1185px;
+    margin: 0 auto;
 }
 
-.header-logo img{
+.header-logo img {
     width: 173px;
     height: 50px;
 }
 
-.header-menu {
+.header-picklist {
     display: flex;
     align-items: center;
-    margin-left: 450px;
+    margin-left: auto;
     gap: 10px;
 }
 
-.icon {
-    background-image: url(../img/Vector.svg);
+.header .button {
+    max-width: 180px;
+    margin-left: 100px;
+}
+
+.icon-globe {
     width: 24px;
     height: 24px;
-
+    background: url(../img/Vector.svg) no-repeat center;
 }
 
-.icon1 {
-    background-image: url(../img/Vector\(1\).svg);
+.icon-arrow {
     width: 12px;
     height: 7px;
+    background: url(../img/Vector\(1\).svg) no-repeat center;
     cursor: pointer;
-
 }
 
-.header-menu p{
+.header-menu p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #1A1A1A;
-}
-
-.header-btn{
-    width: 180px;
-    height: 50px;
-    background: #1A1A1A;
-    border: 1px solid #1A1A1A;
-    border-radius: 50px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #FFFFFF;
-    cursor: pointer;
 }
