@@ -11,16 +11,14 @@
     margin: 127px 59px 126px 261px;
 }
 
-.container-text h1 {
-    font-family: 'Open Sans', sans-serif;
+.start-now-title {
     font-weight: 800;
     font-size: 54px;
     color: #FFFFFF;
     margin-bottom: 29px;
 }
 
-.container-text p {
-    font-family: 'Open Sans', sans-serif;
+.start-now-subtitle {
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
@@ -121,22 +119,12 @@
 }
 
 .head-advantages {
-    padding-top: 141px;
+    
     margin: 0 auto;
     width: 628px;
 
 }
 
-
-.head-advantages h1{
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 54px;
-    color: #1A1A1A;
-    margin-bottom: 70px;
-   
-}
 
 .advantage-first {
     display: flex;
@@ -316,7 +304,7 @@
  border-radius: 100px;
 }
 
-.arrow {
+.arrow-feedback {
     position: absolute;
     left: 260px;
     z-index: 1;
@@ -356,4 +344,53 @@
     position: absolute;
     left: -350px;
     top: 10px;
+}
+
+.container-top-categories {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1220px;
+    margin-bottom: 195px;
+    position: relative;
+}
+
+.become-profi {
+    display: flex;
+    justify-content: space-between;
+    max-height: 660px;
+    background-color: #000000;
+}
+
+.become-profi-title {
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 65px;
+    color: #FFFFFF;
+    margin-bottom: 29px;
+}
+
+.become-profi-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 61px;
+}
+
+.profi-container{
+    max-width: 507px;
+    margin: 164px 100px 163px 262px;
+}
+
+.container-picture {
+    width: 1054px;
+    height: 703px;
+}
+
+.become-profi .button {
+    width: 300px;
+    height: 70px;
+    border: 1px solid;
+    font-size: 20px;
 }

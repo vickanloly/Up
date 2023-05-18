@@ -1,0 +1,14 @@
+.arrow-feedback {
+    position: absolute;
+    left: 260px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.arrow-categories {
+    position: absolute;
+    left: -80px;
+    top: 90px;
+    cursor: pointer;
+    
+}
