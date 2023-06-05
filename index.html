@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/components/tabs.css">
     <link rel="stylesheet" href="css/components/title.css">
     <link rel="stylesheet" href="css/components/arrows.css">
+    <link rel="stylesheet" href="css/components/slider.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,9 @@
             <div class="icon icon-arrow"></div>
         </div>
 
-        <button class="button button-black">Вход</button>
+        <button class="button button-black">
+            Вход
+        </button>
     </div>
 </header>
 
@@ -134,45 +137,45 @@
 
 <!--benefits-->
 <section class="our-advantages">
-    <div class="head-advantages">
-        <h1 class="advantages title">Наши преимущества</h1>
-    </div>
+    <h1 class="title">
+        Наши преимущества
+    </h1>
 
-    <!--    это должен быть один блок в котором элементы переносятся на новую строку-->
-    <div class="advantage-first">
+    <div class="advantage-container">
         <div class="advantage">
-            <!-- ты декомпозировала стили на разные файлы, так же можно поступать и с картинками нужно разбить их на секции (если их очень много как тут) и называть внутри папки benefits_1 , benefits_2-->
             <img src="/img/image 10.png" alt="img">
             <p>Заголовок преимущества</p>
         </div>
+
         <div class="advantage">
             <img src="/img/image 11.png" alt="img">
             <p>Заголовок преимущества</p>
         </div>
+
         <div class="advantage">
             <img src="/img/image 12.png" alt="img">
             <p>Заголовок преимущества</p>
         </div>
+
         <div class="advantage">
             <img src="/img/image 13.png" alt="img">
             <p>Заголовок преимущества</p>
         </div>
-    </div>
 
-    <div class="advantage-second">
         <div class="advantage">
             <img src="/img/image 7.png" alt="img">
             <p>Заголовок преимущества</p>
         </div>
+
         <div class="advantage">
             <img src="/img/image 8.png" alt="img">
             <p>Заголовок преимущества</p>
         </div>
+
         <div class="advantage">
             <img src="/img/image 9.png" alt="img">
             <p>Заголовок преимущества</p>
         </div>
-    </div>
     </div>
 </section>
 
@@ -205,42 +208,51 @@
 </section>
 
 <section class="feedback">
-    <!--    это те же табы из второй секции только с другим текстом, нужно выносить в общие стили такие элементы -->
-    <div class="head-feedback">
-        <h2>Отзывы учеников</h2>
-        <h2>Отзывы специалистов</h2>
+    <div class="tabs">
+        <h2 class="tabs-item">Отзывы учеников</h2>
+        <h2 class="tabs-item">Отзывы учеников</h2>
     </div>
+    <!--            <div class="vector_decor">-->
+    <!--                <img src="/img/Vector_decor.png" alt="img">-->
+    <!--            </div>-->
 
-    <div class="container-students">
-        <div class="students">
-            <div class="around_img1">
-                <img src="/img/around_img.png" alt="img">
-            </div>
-            <img src="./img/image 15.png" alt="img">
-        </div>
-        <div class="students">
-            <div class="around_img2">
-                <img src="/img/around_img.png" alt="img">
-            </div>
-            <img src="./img/image 16.png" alt="img">
+    <div class="slider">
+        <div class="slider-item">
+            <img class="slider-item-photo" src="./img/image 15.png" alt="img">
         </div>
 
-        <div class="student-feedback">
-            <div class="vector_decor">
-                <img src="/img/Vector_decor.png" alt="img">
+        <div class="slider-item">
+            <img class="slider-item-photo" src="./img/image 16.png" alt="img">
+        </div>
+
+        <div class="slide-active">
+            <div class="arrow left">
+                <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.2447 18.0023L0.742188 9.50007L9.2447 0.997559L11.3512 3.10394L4.95536 9.50007L11.3512 15.8958L9.2447 18.0023Z"/>
+                </svg>
             </div>
-            <div class="arrow-feedback">
-                <img src="/img/arrow.png" alt="img">
+
+            <div class="arrow right">
+                <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.2447 18.0023L0.742188 9.50007L9.2447 0.997559L11.3512 3.10394L4.95536 9.50007L11.3512 15.8958L9.2447 18.0023Z"/>
+                </svg>
             </div>
-            <div>
-                <div class="around_img5">
-                    <img src="/img/big_around.png" alt="img">
-                </div>
-                <img src="./img/image 14.png" alt="img">
+
+            <div class="slider-item">
+                <img class="slider-item-photo" src="./img/image 14.png" alt="img">
             </div>
-            <div>
-                <h1>Дарья Лебедева</h1>
-                <img src="/img/rate.png" alt="img">
+
+            <div class="slider-content">
+                <h1 class="slider-title">
+                    Дарья Лебедева
+
+                    <span class="date">
+                        20.05.2020 г
+                    </span>
+                </h1>
+
+                <img class="stars" src="/img/rate.png" alt="img">
+
                 <p>Рыбным текстом называется текст,
                     служащий для временного наполнения макета в публикациях или производстве веб-сайтов,
                     пока финальный текст еще не создан.
@@ -248,17 +260,12 @@
             </div>
         </div>
 
-        <div class="students">
-            <div class="around_img3">
-                <img src="/img/around_img.png" alt="img">
-            </div>
-            <img src="./img/image 17.png" alt="img">
+        <div class="slider-item">
+            <img class="slider-item-photo" src="./img/image 17.png" alt="img">
         </div>
-        <div class="students">
-            <div class="around_img4">
-                <img src="/img/around_img.png" alt="img">
-            </div>
-            <img src="./img/image 18.png" alt="img">
+
+        <div class="slider-item">
+            <img class="slider-item-photo" src="./img/image 18.png" alt="img">
         </div>
     </div>
     </div>
@@ -271,31 +278,41 @@
         <h2 class="tabs-item">Консультирование</h2>
         <h2 class="tabs-item">Life style</h2>
     </div>
+
     <div class="container-top-categories">
-        <div class="arrow-categories">
-            <img src="./img/arrow.png" alt="">
+        <div class="arrow left">
+            <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.2447 18.0023L0.742188 9.50007L9.2447 0.997559L11.3512 3.10394L4.95536 9.50007L11.3512 15.8958L9.2447 18.0023Z"/>
+            </svg>
         </div>
-    <div class="box">
-        <img src="/img/geolocation.png" alt="img">
-        <p>Английский язык</p>
+
+        <div class="arrow right">
+            <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.2447 18.0023L0.742188 9.50007L9.2447 0.997559L11.3512 3.10394L4.95536 9.50007L11.3512 15.8958L9.2447 18.0023Z"/>
+            </svg>
+        </div>
+
+        <div class="box">
+            <img src="/img/geolocation.png" alt="img">
+            <p>Английский язык</p>
+        </div>
+        <div class="box">
+            <img src="/img/geolocation.png" alt="img">
+            <p>География</p>
+        </div>
+        <div class="box">
+            <img src="/img/calculate.png" alt="img">
+            <p>Математика</p>
+        </div>
+        <div class="box">
+            <img src="/img/geolocation.png" alt="img">
+            <p>Право</p>
+        </div>
+        <div class="box">
+            <img src="/img/calculate.png" alt="img">
+            <p>Эссе</p>
+        </div>
     </div>
-    <div class="box">
-        <img src="/img/geolocation.png" alt="img">
-        <p>География</p>
-    </div>
-    <div class="box">
-        <img src="/img/calculate.png" alt="img">
-        <p>Математика</p>
-    </div>
-    <div class="box">
-        <img src="/img/geolocation.png" alt="img">
-        <p>Право</p>
-    </div>
-    <div class="box">
-        <img src="/img/calculate.png" alt="img">
-        <p>Эссе</p>
-    </div>
-</div>
 </section>
 
 <section class="become-profi">

@@ -4,12 +4,19 @@
     border-radius: 50px;
     font-size: 16px;
     cursor: pointer;
+    background-color: red;
 }
 
 .button.button-black {
     border: 1px solid #1A1A1A;
     color: #FFFFFF;
-    background: #1A1A1A;
+    background-color: #1A1A1A;
+}
+
+.button.button-black.button-submit {
+    border: 1px solid #1A1A1A;
+    color: #FFFFFF;
+    background-color: orange;
 }
 
 .button.button-orange {
