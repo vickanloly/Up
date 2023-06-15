@@ -22,4 +22,5 @@
 .button.button-orange {
     color: #000000;
     background: linear-gradient(90deg, #FD9422 0%, #FEC141 100%);
+    border: 1px solid orange;
 }

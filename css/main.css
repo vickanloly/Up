@@ -26,6 +26,7 @@
 }
 
 .start-now .button {
+    
     width: 300px;
     height: 70px;
     border: 1px solid;
@@ -305,4 +306,132 @@
     height: 70px;
     border: 1px solid;
     font-size: 20px;
+
+}
+.last-profi {
+    display: flex;
+    margin: 0 auto;
+    max-width: 578px;
+    justify-content: center;
+
+}
+
+.last-profi .last-profi-title{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    color: #1A1A1A;
+    margin-bottom: 69px;
+    padding-top: 131px;
+}
+
+.news-container {
+   
+    display: flex;
+    margin: 0 auto;
+    max-width: 1458px;
+    justify-content: space-evenly;
+}
+
+.news-menu img{
+    max-width: 320px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+.news-menu-title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #12161A;
+    margin-bottom: 2px;
+}
+
+.news-menu-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #7C7C7C;
+    margin-bottom: 71px;
+}
+
+.news-button{
+    margin: 0 auto;
+    max-width: 300px;
+    padding-bottom: 162px;
+}
+
+.last-news .button {
+    width: 300px;
+    height: 70px;
+    border: 1px solid;
+    
+    
+}
+
+.contact-us {
+    background: linear-gradient(84.96deg, #FF9E29 1.16%, #FEC141 99.1%);
+
+}
+
+.contact-container {
+    margin: 0 auto ;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding-top:  58px;
+    padding-bottom: 58px;
+}
+
+
+
+.contact-title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.contact-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+.booking-submit, 
+input {
+    width: 400px;
+    height: 70px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+    position: relative;
+}
+
+.booking-submit, 
+input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #7C7C7C;
+    padding-left: 37px;
+}
+
+.contact-button .button {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    right: 30px;
+
 }
