@@ -16,11 +16,14 @@
     <link rel="stylesheet" href="css/components/title.css">
     <link rel="stylesheet" href="css/components/arrows.css">
     <link rel="stylesheet" href="css/components/slider.css">
+    <link rel="stylesheet" href="css/components/slider-carousel.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <script defer src="js/slider-carousel.js"></script>
 </head>
 
 
@@ -280,38 +283,44 @@
         <h2 class="tabs-item">Life style</h2>
     </div>
 
-    <div class="container-top-categories">
-        <div class="arrow left">
+    <div class="slider-carousel">
+        <div id="left" class="arrow left">
             <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.2447 18.0023L0.742188 9.50007L9.2447 0.997559L11.3512 3.10394L4.95536 9.50007L11.3512 15.8958L9.2447 18.0023Z"/>
             </svg>
         </div>
 
-        <div class="arrow right">
+        <div class="slider-carousel-container">
+            <div class="slider-carousel-item">
+                <img src="/img/geolocation.png" alt="img">
+                <p>Английский язык</p>
+            </div>
+
+            <div class="slider-carousel-item">
+                <img src="/img/geolocation.png" alt="img">
+                <p>География</p>
+            </div>
+
+            <div class="slider-carousel-item">
+                <img src="/img/calculate.png" alt="img">
+                <p>Математика</p>
+            </div>
+
+            <div class="slider-carousel-item">
+                <img src="/img/geolocation.png" alt="img">
+                <p>Право</p>
+            </div>
+
+            <div class="slider-carousel-item">
+                <img src="/img/calculate.png" alt="img">
+                <p>Эссе</p>
+            </div>
+        </div>
+
+        <div id="right" class="arrow right">
             <svg width="12" height="19" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.2447 18.0023L0.742188 9.50007L9.2447 0.997559L11.3512 3.10394L4.95536 9.50007L11.3512 15.8958L9.2447 18.0023Z"/>
             </svg>
-        </div>
-
-        <div class="box">
-            <img src="/img/geolocation.png" alt="img">
-            <p>Английский язык</p>
-        </div>
-        <div class="box">
-            <img src="/img/geolocation.png" alt="img">
-            <p>География</p>
-        </div>
-        <div class="box">
-            <img src="/img/calculate.png" alt="img">
-            <p>Математика</p>
-        </div>
-        <div class="box">
-            <img src="/img/geolocation.png" alt="img">
-            <p>Право</p>
-        </div>
-        <div class="box">
-            <img src="/img/calculate.png" alt="img">
-            <p>Эссе</p>
         </div>
     </div>
 </section>
