@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/components/title.css">
     <link rel="stylesheet" href="css/components/arrows.css">
     <link rel="stylesheet" href="css/components/slider.css">
+    <link rel="stylesheet" href="css/components/expander.css">
     <link rel="stylesheet" href="css/components/slider-carousel.css">
 
 
@@ -23,9 +24,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 
+    <script defer src="js/main.js"></script>
     <script defer src="js/slider-carousel.js"></script>
 </head>
-
 
 <body>
 <header class="header">
@@ -399,30 +400,47 @@
         </div>
 
         <div class="booking-submit">
-        <input type="email"
-        placeholder="Введите ваш email">
-        
-        </div>
-        <div class="contact-button">
+            <input type="email" placeholder="Введите ваш email">
+
             <button class="button button-black" >Забронировать</button>
         </div>
     </div>
 
 </section>
 
+<section class="faq">
+    <div id="expander" class="expander">
+        <h2 class="expander-title">
+            Как начать учиться на сайте?
+        </h2>
+
+        <p class="expander-description">
+            Равным образом сложившаяся структура организации позволяет оценить значение форм развития. Не следует, однако забывать, что новая модель организационной деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки дальнейших направлений развития.
+        </p>
+
+        <div id="icon" class="icon">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5356 13.364L7.00008 9.82843L3.46455 13.364L0.63612 10.5355L4.17165 7L0.63612 3.46447L3.46455 0.636039L7.00008 4.17157L10.5356 0.636039L13.364 3.46447L9.82851 7L13.364 10.5355L10.5356 13.364Z" />
+            </svg>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="footer-container">
         <div class="footer-navigation">
             <div class="novigation-content">
-                <h3 class="footer-title">Product</h3>
-                <h3 class="footer-title">Features</h3>
-                <h3 class="footer-title">Resources</h3>
+                <a class="footer-title" href="./">Product</a>
+
+                <a class="footer-title" href="./">Features</a>
+
+                <a class="footer-title" href="./">Resources</a>
             </div>
-            
-                <a href="#" class="footer-logo">
-                    <img src="img/footer-logo.svg" alt="logo">
-                </a>
-            
+
+            <a href="./" class="footer-logo">
+                <img src="img/footer-logo.svg" alt="logo">
+            </a>
+
             <div class="novigation-content">
                 <h3 class="footer-title">About</h3>
                 <h3 class="footer-title">Blog</h3>
@@ -430,22 +448,24 @@
             </div>
         </div>
 
-            <div class="social-media">
-                <a href="https://uk-ua.facebook.com" target="_blank">
-                    <img src="img/facebook.svg" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="img/instagram.svg" alt="instagram">
-                </a>
-                <a href="https://ua.linkedin.com" target="_blank">
-                    <img src="img/linkidin.svg" alt="linkedin">
-                </a>
-            </div>
+        <div class="social-media">
+            <a href="https://uk-ua.facebook.com" target="_blank">
+                <img src="img/facebook.svg" alt="facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="img/instagram.svg" alt="instagram">
+            </a>
+            <a href="https://ua.linkedin.com" target="_blank">
+                <img src="img/linkidin.svg" alt="linkedin">
+            </a>
+        </div>
+
         <div class="terms-conditions">
             <h3 class="terms-conditions-title">Политика</h3>
             <h3 class="terms-conditions-title">Условия</h3>
             <h3 class="terms-conditions-title">Карта сайта</h3>
         </div>
+
         <div class="footer-subtitle">
             <p>All rights reserved © 2010 - 2020</p>
         </div>

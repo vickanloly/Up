@@ -1,0 +1,53 @@
+.expander {
+    position: relative;
+    max-width: 1000px;
+    padding: 20px 25px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.expander.collapsed .expander-title {
+    margin-bottom: 20px;
+}
+
+.expander.collapsed .expander-description {
+    display: block;
+}
+
+.expander.collapsed .icon {
+    background: #E6E6E6;
+    transform: rotate(0);
+}
+
+.expander.collapsed .icon svg {
+    fill: #7C7C7C;
+}
+
+.expander .expander-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.expander .expander-description {
+    display: none;
+    font-size: 16px;
+}
+
+.expander .icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+    padding: 8px 9px;
+    background: linear-gradient(90deg, #FD9422 0%, #FEC141 100%);
+    border-radius: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.expander .icon svg {
+    fill: #FFFFFF;
+}
