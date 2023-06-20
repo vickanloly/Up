@@ -337,8 +337,6 @@
     padding-bottom: 58px;
 }
 
-
-
 .contact-title {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -356,25 +354,26 @@
     color: #000000;
 }
 
+.booking-submit {
+    position: relative;
+}
 
-.booking-submit, 
-input {
-    width: 400px;
+.booking-submit input {
+    width: 700px;
     height: 70px;
+    font-size: 16px;
+    padding: 20px 20px 20px 37px;
     background: #FFFFFF;
     border-radius: 50px;
     border: 1px solid #FFFFFF;
     position: relative;
 }
 
-.booking-submit, 
-input::placeholder {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #7C7C7C;
-    padding-left: 37px;
+.booking-submit .button {
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    right: 0;
 }
 
 .contact-button .button {
@@ -382,5 +381,4 @@ input::placeholder {
     width: 300px;
     height: 70px;
     right: 30px;
-
 }
